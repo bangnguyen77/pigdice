@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Bang">
+
+    <title>Pig Game</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <div class="wrapper clearfix">
+      <div class="player-0-panel active">
+        <div class="player-name" id="name-0">Player 1</div>
+        <div class="player-score" id="score-0">43</div> <!-- global score -->
+        <div class="player-current-box">
+          <div class="player-current-label">Current</div>
+          <div class="player-current-score" id="current-0">11</div> <!-- round score -->
+        </div>
+      </div>
+
+      <div class="player-1-panel">
+        <div class="player-name" id="name-1">Player 2</div>
+        <div class="player-score" id="score-1">72</div> <!-- global score -->
+        <div class="player-current-box">
+          <div class="player-current-label">Current</div>
+          <div class="player-current-score" id="current-1">0</div> <!-- round score -->
+        </div>
+      </div>
+
+      <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+      <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+      <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+
+      <img src="dice-5.png" alt="Dice" class="dice">
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="app.js"></script>
+
+  </body>
+</html>
